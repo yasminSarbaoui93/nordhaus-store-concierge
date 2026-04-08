@@ -1,0 +1,188 @@
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - generic:
+      - generic:
+        - generic:
+          - text: Nordhaus
+          - text: Store Concierge
+        - generic: A One Microsoft way of solving everyday life headaches
+        - generic:
+          - generic:
+            - img "Dynamics 365"
+            - text: Dynamics 365
+          - generic:
+            - img "Copilot Studio"
+            - text: Copilot Studio
+          - generic:
+            - img "Microsoft Foundry"
+            - text: Microsoft Foundry
+          - generic:
+            - img "Azure Cosmos DB"
+            - text: Azure Cosmos DB
+          - generic:
+            - img "Purview"
+            - text: Purview
+          - generic:
+            - img "Defender"
+            - text: Defender
+          - generic:
+            - img "Agent 365"
+            - text: Agent 365
+          - generic:
+            - img "Fabric"
+            - text: Fabric
+          - generic:
+            - img "AI Gateway"
+            - text: AI Gateway
+          - generic:
+            - img "GitHub Copilot"
+            - text: GitHub Copilot
+          - generic:
+            - img "Azure Static Web App"
+            - text: Azure Static Web App
+    - generic:
+      - generic: The Problem
+      - generic: A customer walks into the store with a simple question...
+      - generic:
+        - generic:
+          - img:
+            - generic: NORDHAUS
+            - generic:
+              - generic: ALEX
+            - generic: "?"
+            - generic: "?"
+            - generic: "?"
+          - generic: 🎂 Hi! It's my birthday — do you have any special discounts for me?
+          - generic: 😰 Uhh... let me check... I have no idea how to look that up...
+          - img
+    - generic [ref=e100]:
+      - generic [ref=e101]: Headquarters Sees the Pain
+      - generic [ref=e102]: Support tickets are piling up, stores need customer visibility
+      - generic [ref=e104]:
+        - img [ref=e105]:
+          - generic [ref=e108]:
+            - generic [ref=e115]: Dynamics 365
+            - generic [ref=e117]: Customer Dashboard
+            - generic [ref=e120]: ⚠ 47 New Tickets
+            - generic [ref=e121]: from 12 stores
+          - generic [ref=e140]: D365
+        - generic [ref=e141]:
+          - generic [ref=e142]: URGENT
+          - generic [ref=e143]: "Store #12: No customer discount visibility"
+        - generic [ref=e144]:
+          - generic [ref=e145]: URGENT
+          - generic [ref=e146]: "Store #7: Can't check loyalty status"
+        - generic [ref=e147]:
+          - generic [ref=e148]: HIGH
+          - generic [ref=e149]: "Store #3: No campaign info at POS"
+        - generic [ref=e150]: 😟 Our stores have zero visibility on customer data and active campaigns...
+    - generic:
+      - generic: "Scene 3: Enter the AI Agent"
+      - generic: A Copilot Studio agent is created — the store's new concierge
+      - generic:
+        - generic:
+          - img:
+            - generic:
+              - generic: Store Concierge Agent
+            - generic:
+              - generic: 🟦 Dynamics 365
+              - generic: Customers & Sales
+            - generic:
+              - generic: 🔮 Cosmos DB
+              - generic: Campaigns & Brands
+            - generic:
+              - generic: 🤖 Copilot Studio
+          - generic: "💬 \"Any birthday discounts for customer #4521?\""
+          - generic: ✅ Yes! 15% loyalty discount + birthday campaign active since March
+    - generic:
+      - generic: "Scene 4: The Full Agent Platform"
+      - generic: IT delivers a complete agentic solution with a tablet app
+      - generic:
+        - generic:
+          - img:
+            - generic:
+              - generic: Campaign Orchestrator
+              - generic: Microsoft Foundry
+            - generic:
+              - generic: 📋 Campaign
+              - generic: Planner
+            - generic:
+              - generic: 🔍 Auditor
+            - generic:
+              - generic: 📱 Social Media
+              - generic: Manager
+            - generic:
+              - generic: 📊 D365
+              - generic: Publisher
+            - generic:
+              - generic: Manor Associate Hub
+              - generic: Store Concierge App
+            - generic:
+              - generic: ⭐
+              - generic: ✨
+            - generic:
+              - generic: 💻 GitHub Copilot
+            - generic:
+              - generic: ☁️ AI Gateway
+    - generic:
+      - generic: "Scene 5: Secure, Governed & Happy"
+      - generic: Everything monitored, everything compliant — everyone happy
+      - generic:
+        - generic:
+          - img:
+            - generic:
+              - generic: 🛡️ Purview
+              - generic: Data Governance
+            - generic:
+              - generic: 🔒 Defender
+              - generic: Threat Protection
+            - generic:
+              - generic: 🤖 Agent 365
+              - generic: Agent Management
+            - generic:
+              - generic: ⭐
+              - generic: ✨
+            - generic:
+              - generic: 🤖💬
+            - generic:
+              - generic: ❤️
+            - generic:
+              - generic: ✅ 15% birthday discount applied!
+    - generic:
+      - generic:
+        - generic:
+          - img
+        - generic:
+          - text: One AI Platform.
+          - text: Not 50 Point Solutions.
+        - generic: Empowering every store associate with intelligent agents
+        - generic:
+          - generic:
+            - generic: 🟦
+            - text: Dynamics 365
+          - generic:
+            - generic: 🤖
+            - text: Copilot Studio
+          - generic:
+            - generic: 🔮
+            - text: Foundry
+          - generic:
+            - generic: ☁️
+            - text: Azure
+          - generic:
+            - generic: 🛡️
+            - text: Purview
+          - generic:
+            - generic: 🔒
+            - text: Defender
+          - generic:
+            - generic: 💻
+            - text: GitHub
+          - generic:
+            - generic: 📊
+            - text: Agent 365
+  - generic [ref=e30]:
+    - button "‹" [ref=e31] [cursor=pointer]
+    - button "›" [active] [ref=e40] [cursor=pointer]
+    - button "▶" [ref=e42] [cursor=pointer]
+    - generic [ref=e43]: 3/7
