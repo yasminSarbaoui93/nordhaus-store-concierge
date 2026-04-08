@@ -591,7 +591,8 @@
 
         <!-- Speech bubbles -->
         <div class="speech-bubble b1" style="top: 20%; left: 18%; max-width: 250px;">
-          🎂 Hi! It's my birthday — do you have any special discounts for me?
+          <style>.scene[data-scene='1'] .speech-bubble.b1::after { left: 60%; }.scene[data-scene='1'] .speech-bubble.b1::before { left: 60%; }</style>
+          🎂 Hi! It's my birthday, do you have any special discounts for me?
         </div>
         <div class="speech-bubble b2" style="top: 18%; right: 8%; max-width: 220px; background: #FFF3E0;">
           😰 Uhh... let me check... I have no idea how to look that up...
