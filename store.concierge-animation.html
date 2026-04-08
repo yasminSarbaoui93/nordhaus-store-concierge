@@ -499,6 +499,8 @@
         <div class="ms-logo-pill"><img class="logo-icon" src="media/azure-api-management-logo.png" alt="AI Gateway"> AI Gateway</div>
         <div class="ms-logo-pill"><img class="logo-icon" src="media/github-logo.png" alt="GitHub Copilot"> GitHub Copilot</div>
         <div class="ms-logo-pill"><img class="logo-icon" src="media/azure-static-webapp-logo.png" alt="Azure Static Web App"> Azure Static Web App</div>
+        <div class="ms-logo-pill"><img class="logo-icon" src="media/azure-monitor-logo.png" alt="Azure Monitor"> Azure Monitor</div>
+        <div class="ms-logo-pill"><img class="logo-icon" src="media/microsoft-entra-id-logo.png" alt="Entra ID"> Entra ID</div>
       </div>
     </div>
   </div>
@@ -819,26 +821,82 @@
           </defs>
           <!-- Office background -->
           <rect x="40" y="60" width="820" height="320" rx="16" fill="#FFF8E1" stroke="var(--cartoon-stroke)" stroke-width="3"/>
-          <!-- Window -->
-          <rect x="70" y="90" width="120" height="90" rx="6" fill="#81D4FA" stroke="var(--cartoon-stroke)" stroke-width="2"/>
-          <line x1="130" y1="90" x2="130" y2="180" stroke="var(--cartoon-stroke)" stroke-width="2"/>
-          <line x1="70" y1="135" x2="190" y2="135" stroke="var(--cartoon-stroke)" stroke-width="2"/>
-          <!-- Whiteboard -->
-          <rect x="620" y="80" width="200" height="130" rx="6" fill="white" stroke="var(--cartoon-stroke)" stroke-width="2.5"/>
-          <text x="720" y="105" text-anchor="middle" fill="var(--ms-blue)" font-family="Nunito" font-size="10" font-weight="800">Campaign Flow</text>
-          <!-- Whiteboard diagram: boxes and arrows -->
-          <rect x="640" y="115" width="50" height="22" rx="4" fill="#E3F2FD" stroke="var(--ms-blue)" stroke-width="1.5"/>
-          <text x="665" y="130" text-anchor="middle" fill="var(--ms-blue)" font-family="Nunito" font-size="7" font-weight="700">Request</text>
-          <line x1="690" y1="126" x2="710" y2="126" stroke="var(--ms-blue)" stroke-width="1.5" marker-end="url(#arrowBlueNew)"/>
-          <rect x="710" y="115" width="50" height="22" rx="4" fill="#E8F5E9" stroke="var(--ms-teal)" stroke-width="1.5"/>
-          <text x="735" y="130" text-anchor="middle" fill="var(--ms-teal)" font-family="Nunito" font-size="7" font-weight="700">Approve</text>
-          <line x1="760" y1="126" x2="780" y2="126" stroke="var(--ms-teal)" stroke-width="1.5" marker-end="url(#arrowTealNew)"/>
-          <rect x="780" y="115" width="30" height="22" rx="4" fill="#FFF3E0" stroke="var(--ms-orange)" stroke-width="1.5"/>
-          <text x="795" y="130" text-anchor="middle" fill="var(--ms-orange)" font-family="Nunito" font-size="7" font-weight="700">Go!</text>
-          <!-- Question marks on whiteboard -->
-          <text x="680" y="170" fill="var(--ms-red)" font-family="Baloo 2, cursive" font-size="16" font-weight="800" opacity="0.5">?</text>
-          <text x="720" y="185" fill="var(--ms-red)" font-family="Baloo 2, cursive" font-size="20" font-weight="800" opacity="0.4">?</text>
-          <text x="760" y="168" fill="var(--ms-red)" font-family="Baloo 2, cursive" font-size="14" font-weight="800" opacity="0.3">?</text>
+          <!-- Whiteboard (larger) -->
+          <rect x="560" y="70" width="280" height="290" rx="6" fill="white" stroke="var(--cartoon-stroke)" stroke-width="2.5"/>
+          <text x="710" y="92" text-anchor="middle" fill="var(--ms-blue)" font-family="Nunito" font-size="10" font-weight="800">Campaign Creation & Approval Flow</text>
+
+          <!-- Row 1: left to right -->
+          <rect x="575" y="102" width="75" height="24" rx="4" fill="#E3F2FD" stroke="var(--ms-blue)" stroke-width="1.2"/>
+          <text x="612" y="118" text-anchor="middle" fill="var(--ms-blue)" font-family="Nunito" font-size="8.5" font-weight="700">Request</text>
+          <line x1="650" y1="114" x2="662" y2="114" stroke="#999" stroke-width="1.2" marker-end="url(#arrowBlueNew)"/>
+          <rect x="665" y="102" width="75" height="24" rx="4" fill="#E3F2FD" stroke="var(--ms-blue)" stroke-width="1.2"/>
+          <text x="702" y="118" text-anchor="middle" fill="var(--ms-blue)" font-family="Nunito" font-size="8.5" font-weight="700">Brief</text>
+          <line x1="740" y1="114" x2="752" y2="114" stroke="#999" stroke-width="1.2" marker-end="url(#arrowBlueNew)"/>
+          <rect x="755" y="102" width="75" height="24" rx="4" fill="#E3F2FD" stroke="var(--ms-blue)" stroke-width="1.2"/>
+          <text x="792" y="118" text-anchor="middle" fill="var(--ms-blue)" font-family="Nunito" font-size="8.5" font-weight="700">Audience</text>
+          <!-- Arrow down -->
+          <line x1="792" y1="126" x2="792" y2="140" stroke="#999" stroke-width="1.2" marker-end="url(#arrowBlueNew)"/>
+
+          <!-- Row 2: right to left -->
+          <rect x="755" y="142" width="75" height="24" rx="4" fill="#FFF3E0" stroke="var(--ms-orange)" stroke-width="1.2"/>
+          <text x="792" y="158" text-anchor="middle" fill="var(--ms-orange)" font-family="Nunito" font-size="8.5" font-weight="700">Budget</text>
+          <line x1="755" y1="154" x2="743" y2="154" stroke="#999" stroke-width="1.2" marker-end="url(#arrowBlueNew)"/>
+          <rect x="665" y="142" width="75" height="24" rx="4" fill="#FFF3E0" stroke="var(--ms-orange)" stroke-width="1.2"/>
+          <text x="702" y="158" text-anchor="middle" fill="var(--ms-orange)" font-family="Nunito" font-size="8.5" font-weight="700">Strategy</text>
+          <line x1="665" y1="154" x2="653" y2="154" stroke="#999" stroke-width="1.2" marker-end="url(#arrowBlueNew)"/>
+          <rect x="575" y="142" width="75" height="24" rx="4" fill="#FFF3E0" stroke="var(--ms-orange)" stroke-width="1.2"/>
+          <text x="612" y="158" text-anchor="middle" fill="var(--ms-orange)" font-family="Nunito" font-size="8.5" font-weight="700">Channels</text>
+          <!-- Arrow down -->
+          <line x1="612" y1="166" x2="612" y2="180" stroke="#999" stroke-width="1.2" marker-end="url(#arrowBlueNew)"/>
+
+          <!-- Row 3: left to right -->
+          <rect x="575" y="182" width="75" height="24" rx="4" fill="#E8F5E9" stroke="var(--ms-teal)" stroke-width="1.2"/>
+          <text x="612" y="198" text-anchor="middle" fill="var(--ms-teal)" font-family="Nunito" font-size="8.5" font-weight="700">Content Draft</text>
+          <line x1="650" y1="194" x2="662" y2="194" stroke="#999" stroke-width="1.2" marker-end="url(#arrowBlueNew)"/>
+          <rect x="665" y="182" width="75" height="24" rx="4" fill="#E8F5E9" stroke="var(--ms-teal)" stroke-width="1.2"/>
+          <text x="702" y="198" text-anchor="middle" fill="var(--ms-teal)" font-family="Nunito" font-size="8.5" font-weight="700">Design Assets</text>
+          <line x1="740" y1="194" x2="752" y2="194" stroke="#999" stroke-width="1.2" marker-end="url(#arrowBlueNew)"/>
+          <rect x="755" y="182" width="75" height="24" rx="4" fill="#E8F5E9" stroke="var(--ms-teal)" stroke-width="1.2"/>
+          <text x="792" y="198" text-anchor="middle" fill="var(--ms-teal)" font-family="Nunito" font-size="8.5" font-weight="700">Legal Review</text>
+          <!-- Arrow down -->
+          <line x1="792" y1="206" x2="792" y2="220" stroke="#999" stroke-width="1.2" marker-end="url(#arrowBlueNew)"/>
+
+          <!-- Row 4: right to left -->
+          <rect x="755" y="222" width="75" height="24" rx="4" fill="#EDE7F6" stroke="var(--ms-purple)" stroke-width="1.2"/>
+          <text x="792" y="238" text-anchor="middle" fill="var(--ms-purple)" font-family="Nunito" font-size="8.5" font-weight="700">Compliance</text>
+          <line x1="755" y1="234" x2="743" y2="234" stroke="#999" stroke-width="1.2" marker-end="url(#arrowBlueNew)"/>
+          <rect x="665" y="222" width="75" height="24" rx="4" fill="#EDE7F6" stroke="var(--ms-purple)" stroke-width="1.2"/>
+          <text x="702" y="238" text-anchor="middle" fill="var(--ms-purple)" font-family="Nunito" font-size="8.5" font-weight="700">Brand Check</text>
+          <line x1="665" y1="234" x2="653" y2="234" stroke="#999" stroke-width="1.2" marker-end="url(#arrowBlueNew)"/>
+          <rect x="575" y="222" width="75" height="24" rx="4" fill="#EDE7F6" stroke="var(--ms-purple)" stroke-width="1.2"/>
+          <text x="612" y="238" text-anchor="middle" fill="var(--ms-purple)" font-family="Nunito" font-size="8.5" font-weight="700">Mgr Approval</text>
+          <!-- Arrow down -->
+          <line x1="612" y1="246" x2="612" y2="260" stroke="#999" stroke-width="1.2" marker-end="url(#arrowBlueNew)"/>
+
+          <!-- Row 5: left to right -->
+          <rect x="575" y="262" width="75" height="24" rx="4" fill="#FCE4EC" stroke="var(--ms-red)" stroke-width="1.2"/>
+          <text x="612" y="278" text-anchor="middle" fill="var(--ms-red)" font-family="Nunito" font-size="8.5" font-weight="700">VP Sign-off</text>
+          <line x1="650" y1="274" x2="662" y2="274" stroke="#999" stroke-width="1.2" marker-end="url(#arrowBlueNew)"/>
+          <rect x="665" y="262" width="75" height="24" rx="4" fill="#FCE4EC" stroke="var(--ms-red)" stroke-width="1.2"/>
+          <text x="702" y="278" text-anchor="middle" fill="var(--ms-red)" font-family="Nunito" font-size="8.5" font-weight="700">Scheduling</text>
+          <line x1="740" y1="274" x2="752" y2="274" stroke="#999" stroke-width="1.2" marker-end="url(#arrowBlueNew)"/>
+          <rect x="755" y="262" width="75" height="24" rx="4" fill="#FCE4EC" stroke="var(--ms-red)" stroke-width="1.2"/>
+          <text x="792" y="278" text-anchor="middle" fill="var(--ms-red)" font-family="Nunito" font-size="8.5" font-weight="700">A/B Testing</text>
+          <!-- Arrow down -->
+          <line x1="792" y1="286" x2="792" y2="300" stroke="#999" stroke-width="1.2" marker-end="url(#arrowBlueNew)"/>
+
+          <!-- Row 6: right to left (final) -->
+          <rect x="755" y="302" width="75" height="24" rx="4" fill="#E8F5E9" stroke="var(--ms-green)" stroke-width="1.2"/>
+          <text x="792" y="318" text-anchor="middle" fill="var(--ms-green)" font-family="Nunito" font-size="8.5" font-weight="700">QA Review</text>
+          <line x1="755" y1="314" x2="743" y2="314" stroke="#999" stroke-width="1.2" marker-end="url(#arrowBlueNew)"/>
+          <rect x="665" y="302" width="75" height="24" rx="4" fill="#E8F5E9" stroke="var(--ms-green)" stroke-width="1.2"/>
+          <text x="702" y="318" text-anchor="middle" fill="var(--ms-green)" font-family="Nunito" font-size="8.5" font-weight="700">Publish</text>
+          <line x1="665" y1="314" x2="653" y2="314" stroke="#999" stroke-width="1.2" marker-end="url(#arrowBlueNew)"/>
+          <rect x="575" y="302" width="75" height="24" rx="4" fill="#E8F5E9" stroke="var(--ms-green)" stroke-width="1.5"/>
+          <text x="612" y="318" text-anchor="middle" fill="var(--ms-green)" font-family="Nunito" font-size="8.5" font-weight="700">✅ Report</text>
+
+          <!-- Overwhelm tagline -->
+          <text x="710" y="348" text-anchor="middle" fill="var(--ms-red)" font-family="Baloo 2, cursive" font-size="9" font-weight="800" opacity="0.6">18 steps, 9 people, weeks of work...</text>
 
           <!-- Developer at desk -->
           <g transform="translate(380, 180)">
@@ -907,8 +965,60 @@
             <text x="325" y="100" text-anchor="middle" fill="var(--ms-blue)" font-family="Nunito" font-size="12" font-weight="600">creation and approval process?</text>
           </g>
 
-          <!-- Light bulb / idea sparks -->
-          <text x="490" y="85" fill="var(--ms-yellow)" font-family="Baloo 2, cursive" font-size="28" font-weight="800" opacity="0.7">💡</text>
+          <!-- Dream bubble: people with roles (left side) -->
+          <g>
+
+            <!-- Row 1 (3 personas) -->
+            <g transform="translate(95, 160)">
+              <circle cx="0" cy="-7" r="8" fill="#FFCC80" stroke="var(--cartoon-stroke)" stroke-width="1.2"/>
+              <rect x="-6" y="2" width="12" height="14" rx="3" fill="var(--ms-orange)" stroke="var(--cartoon-stroke)" stroke-width="1.2"/>
+              <text x="0" y="26" text-anchor="middle" fill="var(--cartoon-stroke)" font-family="Nunito" font-size="8" font-weight="700">Auditor</text>
+            </g>
+            <g transform="translate(155, 160)">
+              <circle cx="0" cy="-7" r="8" fill="#FFCC80" stroke="var(--cartoon-stroke)" stroke-width="1.2"/>
+              <rect x="-6" y="2" width="12" height="14" rx="3" fill="var(--ms-blue)" stroke="var(--cartoon-stroke)" stroke-width="1.2"/>
+              <text x="0" y="26" text-anchor="middle" fill="var(--cartoon-stroke)" font-family="Nunito" font-size="8" font-weight="700">Strategist</text>
+            </g>
+            <g transform="translate(215, 160)">
+              <circle cx="0" cy="-7" r="8" fill="#FFCC80" stroke="var(--cartoon-stroke)" stroke-width="1.2"/>
+              <rect x="-6" y="2" width="12" height="14" rx="3" fill="var(--ms-teal)" stroke="var(--cartoon-stroke)" stroke-width="1.2"/>
+              <text x="0" y="26" text-anchor="middle" fill="var(--cartoon-stroke)" font-family="Nunito" font-size="6" font-weight="700">Social Media</text>
+            </g>
+
+            <!-- Row 2 (3 personas) -->
+            <g transform="translate(95, 225)">
+              <circle cx="0" cy="-7" r="8" fill="#FFCC80" stroke="var(--cartoon-stroke)" stroke-width="1.2"/>
+              <rect x="-6" y="2" width="12" height="14" rx="3" fill="var(--ms-purple)" stroke="var(--cartoon-stroke)" stroke-width="1.2"/>
+              <text x="0" y="26" text-anchor="middle" fill="var(--cartoon-stroke)" font-family="Nunito" font-size="6" font-weight="700">Compliance</text>
+            </g>
+            <g transform="translate(155, 225)">
+              <circle cx="0" cy="-7" r="8" fill="#FFCC80" stroke="var(--cartoon-stroke)" stroke-width="1.2"/>
+              <rect x="-6" y="2" width="12" height="14" rx="3" fill="var(--ms-green)" stroke="var(--cartoon-stroke)" stroke-width="1.2"/>
+              <text x="0" y="26" text-anchor="middle" fill="var(--cartoon-stroke)" font-family="Nunito" font-size="8" font-weight="700">Content</text>
+            </g>
+            <g transform="translate(215, 225)">
+              <circle cx="0" cy="-7" r="8" fill="#FFCC80" stroke="var(--cartoon-stroke)" stroke-width="1.2"/>
+              <rect x="-6" y="2" width="12" height="14" rx="3" fill="var(--ms-red)" stroke="var(--cartoon-stroke)" stroke-width="1.2"/>
+              <text x="0" y="26" text-anchor="middle" fill="var(--cartoon-stroke)" font-family="Nunito" font-size="8" font-weight="700">Analytics</text>
+            </g>
+
+            <!-- Row 3 (3 personas) -->
+            <g transform="translate(95, 290)">
+              <circle cx="0" cy="-7" r="8" fill="#FFCC80" stroke="var(--cartoon-stroke)" stroke-width="1.2"/>
+              <rect x="-6" y="2" width="12" height="14" rx="3" fill="var(--ms-yellow)" stroke="var(--cartoon-stroke)" stroke-width="1.2"/>
+              <text x="0" y="26" text-anchor="middle" fill="var(--cartoon-stroke)" font-family="Nunito" font-size="8" font-weight="700">Publisher</text>
+            </g>
+            <g transform="translate(155, 290)">
+              <circle cx="0" cy="-7" r="8" fill="#FFCC80" stroke="var(--cartoon-stroke)" stroke-width="1.2"/>
+              <rect x="-6" y="2" width="12" height="14" rx="3" fill="#78909C" stroke="var(--cartoon-stroke)" stroke-width="1.2"/>
+              <text x="0" y="26" text-anchor="middle" fill="var(--cartoon-stroke)" font-family="Nunito" font-size="8" font-weight="700">Designer</text>
+            </g>
+            <g transform="translate(215, 290)">
+              <circle cx="0" cy="-7" r="8" fill="#FFCC80" stroke="var(--cartoon-stroke)" stroke-width="1.2"/>
+              <rect x="-6" y="2" width="12" height="14" rx="3" fill="#E91E63" stroke="var(--cartoon-stroke)" stroke-width="1.2"/>
+              <text x="0" y="26" text-anchor="middle" fill="var(--cartoon-stroke)" font-family="Nunito" font-size="8" font-weight="700">Approver</text>
+            </g>
+          </g>
         </svg>
       </div>
     </div>
@@ -1136,8 +1246,8 @@
 
   <!-- SCENE 5: Security & Happy Ending -->
   <div class="scene" data-scene="6" style="background: linear-gradient(180deg, #E8F5E9 0%, #FFF8E1 100%);">
-    <div class="scene-title">Scene 5: Secure, Governed & Happy</div>
-    <div class="scene-subtitle">Everything monitored, everything compliant — everyone happy</div>
+    <div class="scene-title">Secure, Governed & Happy</div>
+    <div class="scene-subtitle">Everything monitored, everything compliant, everyone happy</div>
     <div class="stage">
       <div class="cartoon-container">
         <svg viewBox="0 0 900 420" style="width:100%;height:100%;" xmlns="http://www.w3.org/2000/svg">
@@ -1146,34 +1256,119 @@
             <!-- Shield shape -->
             <path d="M0,-60 L55,-40 L55,15 Q55,60 0,80 Q-55,60 -55,15 L-55,-40 Z" fill="var(--ms-green)" stroke="var(--cartoon-stroke)" stroke-width="3" opacity="0.9"/>
             <path d="M0,-45 L40,-30 L40,10 Q40,45 0,60 Q-40,45 -40,10 L-40,-30 Z" fill="white" opacity="0.3"/>
-            <!-- Checkmark -->
-            <path d="M-15,5 L-5,18 L20,-12" fill="none" stroke="white" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+
+            <!-- Agent icons inside shield - fitted within inner shield area -->
+            <!-- Store Concierge (teal, top center) -->
+            <g transform="translate(0, -28)">
+              <rect x="-11" y="-1" width="22" height="18" rx="6" fill="var(--ms-teal)" stroke="var(--cartoon-stroke)" stroke-width="1"/>
+              <rect x="-8" y="2" width="16" height="9" rx="4" fill="white" stroke="var(--cartoon-stroke)" stroke-width="0.7"/>
+              <circle cx="-3" cy="6" r="1.5" fill="var(--ms-blue)"/>
+              <circle cx="3" cy="6" r="1.5" fill="var(--ms-blue)"/>
+              <path d="M-2,9 Q0,11 2,9" fill="none" stroke="var(--ms-blue)" stroke-width="0.8" stroke-linecap="round"/>
+              <line x1="0" y1="-1" x2="0" y2="-5" stroke="var(--cartoon-stroke)" stroke-width="1"/>
+              <circle cx="0" cy="-7" r="2" fill="var(--ms-yellow)" stroke="var(--cartoon-stroke)" stroke-width="0.8"/>
+            </g>
+
+            <!-- Orchestrator (orange, middle left) -->
+            <g transform="translate(-20, 5)">
+              <rect x="-11" y="-1" width="22" height="18" rx="6" fill="var(--ms-orange)" stroke="var(--cartoon-stroke)" stroke-width="1"/>
+              <rect x="-8" y="2" width="16" height="9" rx="4" fill="white" stroke="var(--cartoon-stroke)" stroke-width="0.7"/>
+              <circle cx="-3" cy="6" r="1.5" fill="var(--ms-orange)"/>
+              <circle cx="3" cy="6" r="1.5" fill="var(--ms-orange)"/>
+              <path d="M-2,9 Q0,11 2,9" fill="none" stroke="var(--ms-orange)" stroke-width="0.8" stroke-linecap="round"/>
+              <line x1="0" y1="-1" x2="0" y2="-5" stroke="var(--cartoon-stroke)" stroke-width="1"/>
+              <circle cx="0" cy="-7" r="2" fill="var(--ms-purple)" stroke="var(--cartoon-stroke)" stroke-width="0.8"/>
+            </g>
+
+            <!-- Campaign Strategist (light orange, middle right) -->
+            <g transform="translate(20, 5)">
+              <rect x="-11" y="-1" width="22" height="18" rx="6" fill="#FFB74D" stroke="var(--cartoon-stroke)" stroke-width="1"/>
+              <rect x="-8" y="2" width="16" height="9" rx="4" fill="white" stroke="var(--cartoon-stroke)" stroke-width="0.7"/>
+              <circle cx="-3" cy="6" r="1.5" fill="var(--ms-orange)"/>
+              <circle cx="3" cy="6" r="1.5" fill="var(--ms-orange)"/>
+              <path d="M-2,9 Q0,11 2,9" fill="none" stroke="var(--ms-orange)" stroke-width="0.8" stroke-linecap="round"/>
+              <line x1="0" y1="-1" x2="0" y2="-5" stroke="var(--cartoon-stroke)" stroke-width="1"/>
+              <circle cx="0" cy="-7" r="2" fill="var(--ms-purple)" stroke="var(--cartoon-stroke)" stroke-width="0.8"/>
+            </g>
+
+            <!-- Content Creator (light orange, bottom left) -->
+            <g transform="translate(-12, 32)">
+              <rect x="-11" y="-1" width="22" height="18" rx="6" fill="#FFB74D" stroke="var(--cartoon-stroke)" stroke-width="1"/>
+              <rect x="-8" y="2" width="16" height="9" rx="4" fill="white" stroke="var(--cartoon-stroke)" stroke-width="0.7"/>
+              <circle cx="-3" cy="6" r="1.5" fill="var(--ms-orange)"/>
+              <circle cx="3" cy="6" r="1.5" fill="var(--ms-orange)"/>
+              <path d="M-2,9 Q0,11 2,9" fill="none" stroke="var(--ms-orange)" stroke-width="0.8" stroke-linecap="round"/>
+              <line x1="0" y1="-1" x2="0" y2="-5" stroke="var(--cartoon-stroke)" stroke-width="1"/>
+              <circle cx="0" cy="-7" r="2" fill="var(--ms-purple)" stroke="var(--cartoon-stroke)" stroke-width="0.8"/>
+            </g>
+
+            <!-- Auditor (light orange, bottom right) -->
+            <g transform="translate(12, 32)">
+              <rect x="-11" y="-1" width="22" height="18" rx="6" fill="#FFB74D" stroke="var(--cartoon-stroke)" stroke-width="1"/>
+              <rect x="-8" y="2" width="16" height="9" rx="4" fill="white" stroke="var(--cartoon-stroke)" stroke-width="0.7"/>
+              <circle cx="-3" cy="6" r="1.5" fill="var(--ms-orange)"/>
+              <circle cx="3" cy="6" r="1.5" fill="var(--ms-orange)"/>
+              <path d="M-2,9 Q0,11 2,9" fill="none" stroke="var(--ms-orange)" stroke-width="0.8" stroke-linecap="round"/>
+              <line x1="0" y1="-1" x2="0" y2="-5" stroke="var(--cartoon-stroke)" stroke-width="1"/>
+              <circle cx="0" cy="-7" r="2" fill="var(--ms-purple)" stroke="var(--cartoon-stroke)" stroke-width="0.8"/>
+            </g>
+
           </g>
 
           <!-- Security products -->
-          <!-- Purview -->
-          <g transform="translate(160, 100)">
+          <!-- Purview (top left) -->
+          <g transform="translate(160, 80)">
             <rect x="-60" y="-22" width="120" height="50" rx="14" fill="white" stroke="#E91E63" stroke-width="2.5"/>
-            <text x="0" y="-2" text-anchor="middle" fill="#E91E63" font-family="Nunito" font-size="11" font-weight="800">🛡️ Purview</text>
+            <image href="media/microsoft-purview-logo.png" x="-52" y="-12" width="20" height="20" preserveAspectRatio="xMidYMid meet"/>
+            <text x="8" y="-2" text-anchor="middle" fill="#E91E63" font-family="Nunito" font-size="11" font-weight="800">Purview</text>
             <text x="0" y="14" text-anchor="middle" fill="#666" font-family="Nunito" font-size="9">Data Governance</text>
-            <line x1="60" y1="15" x2="390" y2="100" stroke="#E91E63" stroke-width="1.5" stroke-dasharray="5,3" opacity="0.5"/>
           </g>
+          <line x1="220" y1="95" x2="395" y2="130" stroke="#E91E63" stroke-width="1.5" stroke-dasharray="5,3" opacity="0.5"/>
 
-          <!-- Defender -->
-          <g transform="translate(750, 100)">
-            <rect x="-60" y="-22" width="120" height="50" rx="14" fill="white" stroke="var(--ms-blue)" stroke-width="2.5"/>
-            <text x="0" y="-2" text-anchor="middle" fill="var(--ms-blue)" font-family="Nunito" font-size="11" font-weight="800">🔒 Defender</text>
-            <text x="0" y="14" text-anchor="middle" fill="#666" font-family="Nunito" font-size="9">Threat Protection</text>
-            <line x1="-60" y1="15" x2="510" y2="100" stroke="var(--ms-blue)" stroke-width="1.5" stroke-dasharray="5,3" opacity="0.5"/>
-          </g>
-
-          <!-- Agent 365 -->
-          <g transform="translate(160, 220)">
+          <!-- Agent 365 (middle left) -->
+          <g transform="translate(160, 170)">
             <rect x="-60" y="-22" width="120" height="50" rx="14" fill="white" stroke="var(--ms-purple)" stroke-width="2.5"/>
-            <text x="0" y="-2" text-anchor="middle" fill="var(--ms-purple)" font-family="Nunito" font-size="11" font-weight="800">🤖 Agent 365</text>
+            <image href="media/agent365-logo.png" x="-52" y="-12" width="20" height="20" preserveAspectRatio="xMidYMid meet"/>
+            <text x="8" y="-2" text-anchor="middle" fill="var(--ms-purple)" font-family="Nunito" font-size="11" font-weight="800">Agent 365</text>
             <text x="0" y="14" text-anchor="middle" fill="#666" font-family="Nunito" font-size="9">Agent Management</text>
-            <line x1="60" y1="0" x2="390" y2="100" stroke="var(--ms-purple)" stroke-width="1.5" stroke-dasharray="5,3" opacity="0.5"/>
           </g>
+          <line x1="220" y1="170" x2="395" y2="145" stroke="var(--ms-purple)" stroke-width="1.5" stroke-dasharray="5,3" opacity="0.5"/>
+
+          <!-- Entra ID (bottom left) -->
+          <g transform="translate(160, 260)">
+            <rect x="-60" y="-22" width="120" height="50" rx="14" fill="white" stroke="#0078D4" stroke-width="2.5"/>
+            <image href="media/microsoft-entra-id-logo.png" x="-52" y="-12" width="20" height="20" preserveAspectRatio="xMidYMid meet"/>
+            <text x="8" y="-2" text-anchor="middle" fill="#0078D4" font-family="Nunito" font-size="11" font-weight="800">Entra ID</text>
+            <text x="0" y="14" text-anchor="middle" fill="#666" font-family="Nunito" font-size="9">Identity & Access</text>
+          </g>
+          <line x1="220" y1="260" x2="395" y2="170" stroke="#0078D4" stroke-width="1.5" stroke-dasharray="5,3" opacity="0.5"/>
+
+          <!-- Defender (top right) -->
+          <g transform="translate(750, 80)">
+            <rect x="-60" y="-22" width="120" height="50" rx="14" fill="white" stroke="var(--ms-blue)" stroke-width="2.5"/>
+            <image href="media/microsoft-defender-logo.png" x="-52" y="-12" width="20" height="20" preserveAspectRatio="xMidYMid meet"/>
+            <text x="8" y="-2" text-anchor="middle" fill="var(--ms-blue)" font-family="Nunito" font-size="11" font-weight="800">Defender</text>
+            <text x="0" y="14" text-anchor="middle" fill="#666" font-family="Nunito" font-size="9">Threat Protection</text>
+          </g>
+          <line x1="690" y1="95" x2="505" y2="130" stroke="var(--ms-blue)" stroke-width="1.5" stroke-dasharray="5,3" opacity="0.5"/>
+
+          <!-- AI Gateway (middle right) -->
+          <g transform="translate(750, 170)">
+            <rect x="-60" y="-22" width="120" height="50" rx="14" fill="white" stroke="var(--ms-teal)" stroke-width="2.5"/>
+            <image href="media/azure-api-management-logo.png" x="-52" y="-12" width="20" height="20" preserveAspectRatio="xMidYMid meet"/>
+            <text x="8" y="-2" text-anchor="middle" fill="var(--ms-teal)" font-family="Nunito" font-size="11" font-weight="800">AI Gateway</text>
+            <text x="0" y="14" text-anchor="middle" fill="#666" font-family="Nunito" font-size="9">API Management</text>
+          </g>
+          <line x1="690" y1="170" x2="505" y2="145" stroke="var(--ms-teal)" stroke-width="1.5" stroke-dasharray="5,3" opacity="0.5"/>
+
+          <!-- Azure Monitor (bottom right) -->
+          <g transform="translate(750, 260)">
+            <rect x="-60" y="-22" width="120" height="50" rx="14" fill="white" stroke="#0078D4" stroke-width="2.5"/>
+            <image href="media/azure-monitor-logo.png" x="-52" y="-12" width="20" height="20" preserveAspectRatio="xMidYMid meet"/>
+            <text x="10" y="-2" text-anchor="middle" fill="#0078D4" font-family="Nunito" font-size="10" font-weight="800">Azure Monitor</text>
+            <text x="0" y="14" text-anchor="middle" fill="#666" font-family="Nunito" font-size="9">Observability</text>
+          </g>
+          <line x1="690" y1="260" x2="505" y2="170" stroke="#0078D4" stroke-width="1.5" stroke-dasharray="5,3" opacity="0.5"/>
 
           <!-- Happy store scene at bottom -->
           <!-- Store Associate happy -->
@@ -1220,8 +1415,92 @@
     </div>
   </div>
 
-  <!-- SCENE 6: Closing -->
-  <div class="scene ending-scene" data-scene="7">
+  <!-- SCENE: PM and Developer conversation -->
+  <div class="scene" data-scene="7" style="background: linear-gradient(180deg, #E3F2FD 0%, #FFF8E1 100%);">
+    <div class="scene-title">Now, Let's Publish This</div>
+    <div class="scene-subtitle">Building a custom branded web app usually takes weeks, but not this time</div>
+    <div class="stage">
+      <div class="cartoon-container">
+        <svg viewBox="0 0 900 420" style="width:100%;height:100%;" xmlns="http://www.w3.org/2000/svg">
+          <!-- Office background -->
+          <rect x="40" y="60" width="820" height="320" rx="16" fill="#F5F5F5" stroke="var(--cartoon-stroke)" stroke-width="3"/>
+
+          <!-- PM (left side) -->
+          <g transform="translate(250, 230)">
+            <!-- Body (blazer) -->
+            <rect x="-20" y="30" width="40" height="50" rx="8" fill="#5C6BC0" stroke="var(--cartoon-stroke)" stroke-width="2.5"/>
+            <!-- Collar -->
+            <path d="M-8,30 L0,40 L8,30" fill="white" stroke="var(--cartoon-stroke)" stroke-width="1.5"/>
+            <!-- Head -->
+            <circle cx="0" cy="8" r="24" fill="#FFCC80" stroke="var(--cartoon-stroke)" stroke-width="2.5"/>
+            <!-- Eyes - thinking -->
+            <circle cx="-8" cy="5" r="3" fill="white" stroke="var(--cartoon-stroke)" stroke-width="1.5"/>
+            <circle cx="8" cy="5" r="3" fill="white" stroke="var(--cartoon-stroke)" stroke-width="1.5"/>
+            <circle cx="-7" cy="4" r="1.8" fill="var(--cartoon-stroke)"/>
+            <circle cx="9" cy="4" r="1.8" fill="var(--cartoon-stroke)"/>
+            <!-- Raised eyebrow (thinking) -->
+            <path d="M-13,-1 Q-8,-5 -3,-1" fill="none" stroke="var(--cartoon-stroke)" stroke-width="2" stroke-linecap="round"/>
+            <path d="M3,-1 Q8,-4 13,-1" fill="none" stroke="var(--cartoon-stroke)" stroke-width="1.5" stroke-linecap="round"/>
+            <!-- Thinking mouth -->
+            <path d="M-4,16 Q3,14 8,17" fill="none" stroke="var(--cartoon-stroke)" stroke-width="2" stroke-linecap="round"/>
+            <!-- Hair (longer, PM style) -->
+            <path d="M-24,0 Q-20,-25 0,-26 Q20,-25 24,0" fill="#4E342E" stroke="var(--cartoon-stroke)" stroke-width="2"/>
+            <path d="M-24,0 Q-26,8 -24,12" fill="#4E342E" stroke="var(--cartoon-stroke)" stroke-width="1.5"/>
+            <path d="M24,0 Q26,8 24,12" fill="#4E342E" stroke="var(--cartoon-stroke)" stroke-width="1.5"/>
+            <!-- Hand gesture (pointing up) -->
+            <line x1="20" y1="45" x2="35" y2="30" stroke="var(--cartoon-stroke)" stroke-width="3" stroke-linecap="round"/>
+            <!-- Name tag -->
+            <text x="0" y="95" text-anchor="middle" fill="var(--cartoon-stroke)" font-family="Baloo 2, cursive" font-size="14" font-weight="700">Asteri (PM)</text>
+          </g>
+
+          <!-- Developer (right side) -->
+          <g transform="translate(650, 230)">
+            <!-- Body (hoodie) -->
+            <rect x="-20" y="30" width="40" height="50" rx="8" fill="#37474F" stroke="var(--cartoon-stroke)" stroke-width="2.5"/>
+            <!-- Hoodie detail -->
+            <path d="M-8,30 Q0,38 8,30" fill="none" stroke="#546E7A" stroke-width="1.5"/>
+            <!-- Head -->
+            <circle cx="0" cy="8" r="24" fill="#FFCC80" stroke="var(--cartoon-stroke)" stroke-width="2.5"/>
+            <!-- Glasses -->
+            <rect x="-14" y="-1" width="12" height="9" rx="4" fill="none" stroke="var(--cartoon-stroke)" stroke-width="1.8"/>
+            <rect x="2" y="-1" width="12" height="9" rx="4" fill="none" stroke="var(--cartoon-stroke)" stroke-width="1.8"/>
+            <line x1="-2" y1="4" x2="2" y2="4" stroke="var(--cartoon-stroke)" stroke-width="1.5"/>
+            <!-- Eyes behind glasses - excited -->
+            <circle cx="-8" cy="4" r="2" fill="var(--cartoon-stroke)"/>
+            <circle cx="8" cy="4" r="2" fill="var(--cartoon-stroke)"/>
+            <!-- Big smile -->
+            <path d="M-8,14 Q0,22 8,14" fill="none" stroke="var(--cartoon-stroke)" stroke-width="2.5" stroke-linecap="round"/>
+            <!-- Messy hair -->
+            <path d="M-24,0 Q-20,-28 0,-27 Q20,-28 24,0" fill="#3E2723" stroke="var(--cartoon-stroke)" stroke-width="2"/>
+            <path d="M-16,-22 Q-13,-30 -10,-24" fill="#3E2723" stroke="var(--cartoon-stroke)" stroke-width="1"/>
+            <path d="M12,-20 Q16,-28 14,-22" fill="#3E2723" stroke="var(--cartoon-stroke)" stroke-width="1"/>
+            <!-- Thumbs up gesture -->
+            <line x1="-20" y1="45" x2="-35" y2="30" stroke="var(--cartoon-stroke)" stroke-width="3" stroke-linecap="round"/>
+            <circle cx="-37" cy="28" r="5" fill="#FFCC80" stroke="var(--cartoon-stroke)" stroke-width="1.5"/>
+            <!-- Name tag -->
+            <text x="0" y="95" text-anchor="middle" fill="var(--cartoon-stroke)" font-family="Baloo 2, cursive" font-size="14" font-weight="700">Floridines (Dev)</text>
+          </g>
+
+          <!-- Lightbulb between them -->
+          <text x="450" y="200" text-anchor="middle" fill="var(--ms-yellow)" font-size="36">💡</text>
+        </svg>
+
+        <!-- PM speech bubble (closer to persona, tip on bottom-right) -->
+        <div class="speech-bubble b1" style="top: 18%; left: 8%; max-width: 300px; background: #E8EAF6;">
+          <style>.scene[data-scene='7'] .speech-bubble.b1::after { left: auto; right: 40%; }.scene[data-scene='7'] .speech-bubble.b1::before { left: auto; right: 40%; }</style>
+          🤔 "Hey Floridines, we should make sure to now make this agent accessible to our store associates through a highly customised and branded frontend!"
+        </div>
+
+        <!-- Developer speech bubble (closer to persona) -->
+        <div class="speech-bubble b2" style="top: 25%; right: 8%; max-width: 280px; background: #E8F5E9;">
+          😄 "That's a good point Asteri! I have an idea on how to do this!"
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SCENE: Closing -->
+  <div class="scene ending-scene" data-scene="8">
     <div style="display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;">
       <div class="checkmark-circle">
         <svg viewBox="0 0 50 50" fill="none"><path d="M12 25 L22 35 L38 16" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
