@@ -846,56 +846,65 @@
             <rect x="-100" y="80" width="200" height="18" rx="4" fill="#8D6E63" stroke="var(--cartoon-stroke)" stroke-width="2.5"/>
             <rect x="-90" y="98" width="10" height="55" rx="2" fill="#8D6E63" stroke="var(--cartoon-stroke)" stroke-width="2"/>
             <rect x="80" y="98" width="10" height="55" rx="2" fill="#8D6E63" stroke="var(--cartoon-stroke)" stroke-width="2"/>
-            <!-- Laptop -->
-            <rect x="-40" y="48" width="80" height="36" rx="4" fill="#263238" stroke="var(--cartoon-stroke)" stroke-width="2"/>
-            <rect x="-34" y="52" width="68" height="26" rx="2" fill="#BBDEFB"/>
-            <!-- Code lines on laptop -->
-            <rect x="-28" y="57" width="30" height="3" rx="1" fill="var(--ms-teal)" opacity="0.6"/>
-            <rect x="-28" y="63" width="45" height="3" rx="1" fill="var(--ms-blue)" opacity="0.6"/>
-            <rect x="-28" y="69" width="20" height="3" rx="1" fill="var(--ms-purple)" opacity="0.6"/>
+            <!-- Laptop (bigger screen) -->
+            <rect x="-50" y="30" width="100" height="54" rx="5" fill="#263238" stroke="var(--cartoon-stroke)" stroke-width="2"/>
+            <rect x="-44" y="34" width="88" height="42" rx="3" fill="#0a1628"/>
+            <!-- Binary code on screen -->
+            <text x="-40" y="44" fill="#00E676" font-family="monospace" font-size="7" opacity="0.9">01101001 0110</text>
+            <text x="-40" y="52" fill="#00E676" font-family="monospace" font-size="7" opacity="0.7">10110010 1001</text>
+            <text x="-40" y="60" fill="#00E676" font-family="monospace" font-size="7" opacity="0.8">01001101 0110</text>
+            <text x="-40" y="68" fill="#00E676" font-family="monospace" font-size="7" opacity="0.6">11010011 0101</text>
+            <text x="-40" y="76" fill="#00E676" font-family="monospace" font-size="7" opacity="0.5">00110110 1100</text>
             <!-- Laptop base -->
-            <rect x="-48" y="84" width="96" height="4" rx="2" fill="#37474F" stroke="var(--cartoon-stroke)" stroke-width="1.5"/>
+            <rect x="-56" y="84" width="112" height="4" rx="2" fill="#37474F" stroke="var(--cartoon-stroke)" stroke-width="1.5"/>
 
-            <!-- Chair -->
-            <rect x="110" y="45" width="50" height="8" rx="4" fill="#546E7A" stroke="var(--cartoon-stroke)" stroke-width="2"/>
-            <rect x="150" y="5" width="10" height="48" rx="3" fill="#546E7A" stroke="var(--cartoon-stroke)" stroke-width="2"/>
-            <rect x="115" y="53" width="8" height="45" rx="2" fill="#455A64" stroke="var(--cartoon-stroke)" stroke-width="1.5"/>
-            <rect x="147" y="53" width="8" height="45" rx="2" fill="#455A64" stroke="var(--cartoon-stroke)" stroke-width="1.5"/>
+            <!-- Chair (on the floor, same level as desk legs) -->
+            <rect x="110" y="110" width="50" height="8" rx="4" fill="#546E7A" stroke="var(--cartoon-stroke)" stroke-width="2"/>
+            <rect x="150" y="68" width="10" height="50" rx="3" fill="#546E7A" stroke="var(--cartoon-stroke)" stroke-width="2"/>
+            <rect x="115" y="118" width="8" height="35" rx="2" fill="#455A64" stroke="var(--cartoon-stroke)" stroke-width="1.5"/>
+            <rect x="147" y="118" width="8" height="35" rx="2" fill="#455A64" stroke="var(--cartoon-stroke)" stroke-width="1.5"/>
 
             <!-- Developer sitting on chair -->
-            <!-- Body -->
-            <rect x="117" y="5" width="32" height="42" rx="8" fill="#1565C0" stroke="var(--cartoon-stroke)" stroke-width="2.5"/>
+            <!-- Body (hoodie) -->
+            <rect x="117" y="68" width="32" height="42" rx="8" fill="#37474F" stroke="var(--cartoon-stroke)" stroke-width="2.5"/>
+            <!-- Hoodie detail -->
+            <path d="M126,68 Q133,75 140,68" fill="none" stroke="#546E7A" stroke-width="1.5"/>
             <!-- Head -->
-            <circle cx="133" cy="-18" r="22" fill="#FFCC80" stroke="var(--cartoon-stroke)" stroke-width="2.5"/>
-            <!-- Eyes - 🤔 thinking, looking up-left -->
-            <circle cx="125" cy="-20" r="3" fill="white" stroke="var(--cartoon-stroke)" stroke-width="1.5"/>
-            <circle cx="141" cy="-20" r="3" fill="white" stroke="var(--cartoon-stroke)" stroke-width="1.5"/>
-            <circle cx="124" cy="-21" r="1.8" fill="var(--cartoon-stroke)"/>
-            <circle cx="140" cy="-21" r="1.8" fill="var(--cartoon-stroke)"/>
+            <circle cx="133" cy="45" r="22" fill="#FFCC80" stroke="var(--cartoon-stroke)" stroke-width="2.5"/>
+            <!-- Glasses (developer look) -->
+            <rect x="120" y="39" width="12" height="9" rx="4" fill="none" stroke="var(--cartoon-stroke)" stroke-width="1.8"/>
+            <rect x="135" y="39" width="12" height="9" rx="4" fill="none" stroke="var(--cartoon-stroke)" stroke-width="1.8"/>
+            <line x1="132" y1="43" x2="135" y2="43" stroke="var(--cartoon-stroke)" stroke-width="1.5"/>
+            <!-- Eyes behind glasses - 🤔 thinking, looking up-left -->
+            <circle cx="126" cy="43" r="2" fill="var(--cartoon-stroke)"/>
+            <circle cx="141" cy="43" r="2" fill="var(--cartoon-stroke)"/>
             <!-- Raised eyebrow (left higher than right for 🤔 look) -->
-            <path d="M121,-26 Q125,-29 129,-26" fill="none" stroke="var(--cartoon-stroke)" stroke-width="2" stroke-linecap="round"/>
-            <path d="M137,-24 Q141,-26 145,-24" fill="none" stroke="var(--cartoon-stroke)" stroke-width="1.5" stroke-linecap="round"/>
+            <path d="M119,36 Q125,32 131,36" fill="none" stroke="var(--cartoon-stroke)" stroke-width="2" stroke-linecap="round"/>
+            <path d="M134,37 Q141,34 148,37" fill="none" stroke="var(--cartoon-stroke)" stroke-width="1.5" stroke-linecap="round"/>
             <!-- Thinking mouth (slight smirk, contemplative not worried) -->
-            <path d="M128,-4 Q134,-2 140,-5" fill="none" stroke="var(--cartoon-stroke)" stroke-width="2" stroke-linecap="round"/>
-            <!-- Hair -->
-            <path d="M111,-24 Q117,-46 133,-44 Q149,-46 155,-24" fill="#3E2723" stroke="var(--cartoon-stroke)" stroke-width="2"/>
+            <path d="M128,59 Q134,61 140,58" fill="none" stroke="var(--cartoon-stroke)" stroke-width="2" stroke-linecap="round"/>
+            <!-- Messy hair -->
+            <path d="M111,39 Q115,15 133,17 Q151,15 155,39" fill="#3E2723" stroke="var(--cartoon-stroke)" stroke-width="2"/>
+            <path d="M118,23 Q115,15 120,17" fill="#3E2723" stroke="var(--cartoon-stroke)" stroke-width="1"/>
+            <path d="M145,25 Q150,17 147,19" fill="#3E2723" stroke="var(--cartoon-stroke)" stroke-width="1"/>
             <!-- Hand on chin (thinking pose like 🤔) - arm reaching up to chin -->
-            <line x1="117" y1="20" x2="112" y2="5" stroke="var(--cartoon-stroke)" stroke-width="3" stroke-linecap="round"/>
-            <line x1="112" y1="5" x2="118" y2="-4" stroke="#FFCC80" stroke-width="5" stroke-linecap="round"/>
-            <circle cx="118" cy="-5" r="5" fill="#FFCC80" stroke="var(--cartoon-stroke)" stroke-width="1.5"/>
+            <line x1="117" y1="83" x2="112" y2="68" stroke="var(--cartoon-stroke)" stroke-width="3" stroke-linecap="round"/>
+            <line x1="112" y1="68" x2="118" y2="58" stroke="#FFCC80" stroke-width="5" stroke-linecap="round"/>
+            <circle cx="118" cy="57" r="5" fill="#FFCC80" stroke="var(--cartoon-stroke)" stroke-width="1.5"/>
           </g>
 
           <!-- Thought bubble -->
           <g>
-            <!-- Thought dots -->
-            <circle cx="460" cy="130" r="5" fill="white" stroke="var(--cartoon-stroke)" stroke-width="2"/>
-            <circle cx="440" cy="110" r="8" fill="white" stroke="var(--cartoon-stroke)" stroke-width="2"/>
+            <!-- Thought dots (from developer head upward) -->
+            <circle cx="480" cy="195" r="4" fill="white" stroke="var(--cartoon-stroke)" stroke-width="2"/>
+            <circle cx="465" cy="170" r="6" fill="white" stroke="var(--cartoon-stroke)" stroke-width="2"/>
+            <circle cx="445" cy="140" r="8" fill="white" stroke="var(--cartoon-stroke)" stroke-width="2"/>
             <!-- Main thought cloud -->
-            <rect x="200" y="18" width="280" height="80" rx="20" fill="white" stroke="var(--cartoon-stroke)" stroke-width="2.5"/>
-            <text x="340" y="42" text-anchor="middle" fill="var(--cartoon-stroke)" font-family="Nunito" font-size="9.5" font-weight="700">What if store associates could request</text>
-            <text x="340" y="56" text-anchor="middle" fill="var(--cartoon-stroke)" font-family="Nunito" font-size="9.5" font-weight="700">new campaigns for their customers?</text>
-            <text x="340" y="72" text-anchor="middle" fill="var(--ms-blue)" font-family="Nunito" font-size="9" font-weight="600">How would I digitalize the campaign</text>
-            <text x="340" y="85" text-anchor="middle" fill="var(--ms-blue)" font-family="Nunito" font-size="9" font-weight="600">creation and approval process?</text>
+            <rect x="160" y="18" width="330" height="100" rx="22" fill="white" stroke="var(--cartoon-stroke)" stroke-width="2.5"/>
+            <text x="325" y="46" text-anchor="middle" fill="var(--cartoon-stroke)" font-family="Nunito" font-size="13" font-weight="700">What if store associates could request</text>
+            <text x="325" y="64" text-anchor="middle" fill="var(--cartoon-stroke)" font-family="Nunito" font-size="13" font-weight="700">new campaigns for their customers?</text>
+            <text x="325" y="84" text-anchor="middle" fill="var(--ms-blue)" font-family="Nunito" font-size="12" font-weight="600">How would I digitalize the campaign</text>
+            <text x="325" y="100" text-anchor="middle" fill="var(--ms-blue)" font-family="Nunito" font-size="12" font-weight="600">creation and approval process?</text>
           </g>
 
           <!-- Light bulb / idea sparks -->
